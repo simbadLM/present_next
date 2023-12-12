@@ -2,6 +2,12 @@ import type { Metadata } from 'next'
 import Head from 'next/head'
 import Header  from './header/page'; 
 import Section from './section/page';
+import { Manrope } from 'next/font/google'
+ 
+const manrope = Manrope({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Présentation',
@@ -13,14 +19,13 @@ export const metadata: Metadata = {
  
 export default function Home() {
   return (
-    <div>
+    <main className={manrope.className}>
       <Head>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet"></link>
-    <title>Présentation</title>
+        <title>Présentation</title>
       </Head>
       <Header />
       <Section />
-    </div>
+    </main>
     
   )
 }
