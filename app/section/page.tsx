@@ -15,14 +15,14 @@ export default function Section () {
             </div>
             <div  className="m-20">
             <h2>Mon Parcours</h2>
-                <p>Après un bac littéraire et un bac professionnel en mécanique, j'ai commencé à travailler. 
-                    Pendant le confinement, j'ai décidé de me lancer dans l'e-commerce en utilisant le CMS Shopify. 
-                    C'est là que j'ai mis un premier pied dans le monde du code en cherchant à personnaliser mes projets par moi-même.</p>
-                <p>J'ai appris les bases du HTML, du CSS et du langage C, ce qui a éveillé mon intérêt pour la programmation. 
-                    J'ai développé le désir de me reconvertir dans ce domaine. Malheureusement, le confinement a pris fin, et j'ai dû reprendre une activité salariée. 
-                    Pendant deux ans, j'ai travaillé dans le secteur de la restauration, occupant des postes de management et d'exécutif pur.</p>
-                <p>En 2022, j'ai ressenti à nouveau l'appel de la formation en développement. Cela m'a conduit à une décision importante : en septembre 2023, 
-                    j'ai intégré le BTS SIO au Greta de Quimper pour devenir développeur.</p>
+                <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai commencé à travailler. 
+                    Pendant le confinement, j&apos;ai décidé de me lancer dans l&apos;e-commerce en utilisant le CMS Shopify. 
+                    C&apos;est là que j&apos;ai mis un premier pied dans le monde du code en cherchant à personnaliser mes projets par moi-même.</p>
+                <p>J&apos;ai appris les bases du HTML, du CSS et du langage C, ce qui a éveillé mon intérêt pour la programmation. 
+                    J&apos;ai développé le désir de me reconvertir dans ce domaine. Malheureusement, le confinement a pris fin, et j&apos;ai dû reprendre une activité salariée. 
+                    Pendant deux ans, j&apos;ai travaillé dans le secteur de la restauration, occupant des postes de management et d&apos;exécutif pur.</p>
+                <p>En 2022, j&apos;ai ressenti à nouveau l&apos;appel de la formation en développement. Cela m&apos;a conduit à une décision importante : en septembre 2023, 
+                    j&apos;ai intégré le BTS SIO au Greta de Quimper pour devenir développeur.</p>
             </div>
     </section>
     )
