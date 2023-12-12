@@ -1,64 +1,73 @@
-'use client'
-import { FormEvent, useState } from 'react'
- 
-export default function Contact() {
+'use client';
 
-  const [name, setName] = useState('');
-  const [surname, setSurname] = useState('');
-  const [mail, setMail] = useState('');
-  const [message, setMessage] = useState('');
+import { FC } from 'react';
+import { useForm } from 'react-hook-form';
+import { sendEmail } from '@/utils/send-email';
 
-  const onSubmit = (e: FormEvent) => {
-    e.preventDefault()
-    console.log('Data', name, surname, mail, message)
+export type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+const Contact: FC = () => {
+  const { register, handleSubmit } = useForm<FormData>();
+
+  function onSubmit(data: FormData) {
+    sendEmail(data);
   }
 
- 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center p-24 bg-gray'>
-      
-      <form onSubmit={onSubmit}>
-                <label>Nom : </label> 
-                  <input 
-                    required 
-                    type="text" 
-                    placeholder="Durand"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}>
-                    </input>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className='mb-5'>
+        <label
+          htmlFor='name'
+          className='mb-3 block text-base font-medium text-black'
+        >
+          Nom et prénom
+        </label>
+        <input
+          type='text'
+          placeholder='Jean Durand'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          {...register('name', { required: true })}
+        />
+      </div>
+      <div className='mb-5'>
+        <label
+          htmlFor='email'
+          className='mb-3 block text-base font-medium text-black'
+        >
+          Adresse mail
+        </label>
+        <input
+          type='email'
+          placeholder='example@domain.com'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          {...register('email', { required: true })}
+        />
+      </div>
+      <div className='mb-5'>
+        <label
+          htmlFor='message'
+          className='mb-3 block text-base font-medium text-black'
+        >
+          Message
+        </label>
+        <textarea
+          rows={4}
+          placeholder='Votre message ici'
+          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          {...register('message', { required: true })}
+        ></textarea>
+      </div>
+      <div>
+        <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+          Envoyer
+        </button>
+      </div>
+    </form>
+  );
+};
 
-                <label>Prénom : </label>
-                  <input 
-                    required 
-                    type="text" 
-                    placeholder="Jean"
-                    value={surname}
-                    onChange={(e) => setSurname(e.target.value)}>
-                  </input>
-                  
-                <label>Mél: </label>
-                  <input 
-                    required 
-                    type="email"
-                    placeholder="jean.durand@mail.com" 
-                    name="mail"
-                    value={mail}
-                    onChange={(e) => setMail(e.target.value)}>
-                  </input>
-
-                <label>Votre message : </label>
-                  <textarea 
-                    required
-                    placeholder='Votre message ici'
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}> 
-                    </textarea>
-                <button 
-                  type="submit" 
-                  value="Envoyer">Envoyer
-                </button>
-            </form>
-        </main>
-    )
-}
-
+export default Contact;
