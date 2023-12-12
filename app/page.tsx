@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Head from 'next/head'
-import Header  from './header/page'; 
-import Section from './section/page';
+import Header  from './header/page'
+import Section from './section/page'
+import Contact from './contact/page'
 import { Manrope } from 'next/font/google'
  
 const manrope = Manrope({
@@ -25,6 +26,7 @@ export default function Home() {
       </Head>
       <Header />
       <Section />
+      <Contact />
     </main>
     
   )

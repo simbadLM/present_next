@@ -47,3 +47,7 @@ body {
 #a:hover::before {
   transform: scaleX(1);
 }
+
+input, textarea {
+  color : black;
+}
