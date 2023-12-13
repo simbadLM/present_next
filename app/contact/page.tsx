@@ -18,18 +18,19 @@ const Contact: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="inblock justify-center ml-10 mr-10 mb-10 sm:m-60 sm:mt-5 " onSubmit={handleSubmit(onSubmit)}>
+      <h2 className=' sm:flex justify-center'>Contact</h2>
       <div className='mb-5'>
         <label
           htmlFor='name'
-          className='mb-3 block text-base font-medium text-white'
+          className='sm: mb-3 block text-base font-medium text-white'
         >
           Nom et prénom
         </label>
         <input
           type='text'
           placeholder='Jean Durand'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md  border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           {...register('name', { required: true })}
         />
       </div>
