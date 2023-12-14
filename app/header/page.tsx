@@ -6,7 +6,7 @@ export default function Header () {
         <header className="text-black fixed top-0 left-0 right-0 bg-white m-auto p-8 z-1 sm:justify-center  flex ">
             <div className="flex items-center justify-center">
                 <nav className="flex justify-center items-center">
-                    <ul className="flex space-x-8 flex justify-center items-center">
+                    <ul className="flex space-x-8  justify-center items-center">
                         <li><a id="a" href="#present">Présentation</a></li>
                         <li><a id="a" href="#project">Projets</a></li>
                     </ul>

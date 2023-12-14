@@ -9,8 +9,10 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+   
   }
 }
+
 
 body {
   font-family: 'Manrope', sans-serif;
@@ -55,4 +57,27 @@ input, textarea {
 h2 {
   color: #a5b4fc;
   font-size : 2em;
+}
+
+#projet {
+  display : "";
+}
+
+#projet:hover {
+	animation: rotateAnimation 0.5s linear ;
+}
+
+@keyframes rotateAnimation {
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(90deg);}
+}
+
+#projet_hid {
+  display : none;
+  animation : rotateAnimation1 0.5s linear ;
+}
+
+@keyframes rotateAnimation1 {
+	0% {transform: rotateY(-90deg);}
+	100% {transform: rotateY(0deg);}
 }

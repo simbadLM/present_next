@@ -16,6 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script defer src="javascript.js"/>
+      </head>
       <body className={manrope.className}>{children}</body>
     </html>
   )
