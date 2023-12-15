@@ -59,6 +59,14 @@ h2 {
   font-size : 2em;
 }
 
+header {
+  z-index : 2;
+}
+
+#projetGlobal {
+  z-index : 0;
+  position : sticky;
+}
 
 /* #projet:hover {
 	animation: rotateAnimation 0.5s linear;

@@ -66,6 +66,9 @@ const Contact: FC = () => {
         <button className='focus:disabled focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none'>
           Envoyer
         </button>
+        <div>
+          <p>Merci pour votre message !</p>
+        </div>
       </div>
     </form>
   );

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Header () {
     return (
-        <header className="text-black fixed top-0 left-0 right-0 bg-white m-auto p-8 z-1 sm:justify-center  flex ">
+        <header className="text-black fixed top-0 left-0 right-0 bg-white m-auto p-8  sm:justify-center  flex ">
             <div className="flex items-center justify-center">
                 <nav className="flex justify-center items-center">
                     <ul className="flex space-x-8  justify-center items-center">
