@@ -59,13 +59,10 @@ h2 {
   font-size : 2em;
 }
 
-#projet {
-  display : "";
-}
 
-#projet:hover {
-	animation: rotateAnimation 0.5s linear ;
-}
+/* #projet:hover {
+	animation: rotateAnimation 0.5s linear;
+} */
 
 @keyframes rotateAnimation {
 	0% {transform: rotateY(0deg);}
@@ -74,7 +71,7 @@ h2 {
 
 #projet_hid {
   display : none;
-  animation : rotateAnimation1 0.5s linear ;
+  /*animation : rotateAnimation1 0.5s linear */;
 }
 
 @keyframes rotateAnimation1 {
