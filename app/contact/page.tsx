@@ -1,20 +1,24 @@
 'use client';
 
 import { FC } from 'react';
-import { useForm } from 'react-hook-form';
-import { sendEmail } from '@/utils/send-email';
+import { useForm } from 'react-hook-form'
+import React, {useState} from 'react'
+import { sendEmail } from '@/utils/send-email'
 
 export type FormData = {
   name: string;
   email: string;
   message: string;
+
 };
 
 const Contact: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
-
-  function onSubmit(data: FormData) {
-    sendEmail(data);
+  let [status, setStatus] = useState(0);
+  
+  async function onSubmit(data: FormData) {
+    setStatus(await  sendEmail(data));
+    console.log(status);
   }
 
   return (
@@ -62,14 +66,15 @@ const Contact: FC = () => {
           {...register('message', { required: true })}
         ></textarea>
       </div>
-      <div>
-        <button className='focus:disabled focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none'>
-          Envoyer
-        </button>
+      <div id="emailButton">
         <div>
-          <p>Merci pour votre message !</p>
+          <button className='focus:disabled focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none'>
+            Envoyer
+          </button>
         </div>
+      <div id="stat" className="hidden">{status}</div>
       </div>
+      
     </form>
   );
 };

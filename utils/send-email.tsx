@@ -1,17 +1,23 @@
+'use client'
 import { FormData } from '@/app/contact/page';
 
-export function sendEmail(data: FormData) {
+export async function sendEmail(data: FormData) {
   const apiEndpoint = '/api/email';
-
-  fetch(apiEndpoint, {
+ let status  = 9;
+  await fetch(apiEndpoint, {
     method: 'POST',
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response.message);
+      
+     // flag = response.status === 200;
+     status = response.status;
+     console.log(response.status);
     })
     .catch((err) => {
-      alert(err);
+      console.log("error");
+   
     });
+     return status;
 }

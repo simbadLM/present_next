@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: recap});
+    return NextResponse.json({ message: recap, status : 200}, {status : 200});
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
