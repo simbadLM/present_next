@@ -26,8 +26,8 @@ export default function Projet () {
 
                     <div className=' w-[461px] h-[260px]' id="projet_hid">
                         <div className="space-y-2 items-center mt-[70px]  justify-center">
-                            <Link className=" text-center  m-2 block focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none" href="http://localhost:3000/" target='blank'>Accès à la page</Link>
-                            <Link className=" text-center  m-2 block focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none"   href="https://github.com/XP3rS0na" target='blank'>Accès au projet Github</Link>
+                            <Link className=" text-center  m-2 block focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none" href="http://quentin-balloy-portfolio.tech/" target='blank'>Accès à la page</Link>
+                            <Link className=" text-center  m-2 block focus:bg-[#a5b4fc] focus:opacity-20 hover:opacity-70 rounded-md bg-[#a5b4fc] opacity-85 py-3 px-8 text-base font-semibold text-white outline-none"   href="https://github.com/XP3rS0na/present_next" target='blank'>Accès au projet Github</Link>
                             <div className="text-[2em] pr-0 ml-[150px] sm:hidden"><button  id="buttonLeave" type="button"><b>X</b></button></div>
                         </div>
                     </div>
