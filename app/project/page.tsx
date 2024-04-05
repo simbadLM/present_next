@@ -21,7 +21,7 @@ export default function Section () {
                                             <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold w-20 h-6 mb-3 sm:mb-0 text-black bg-[#a5b4fc] rounded-full">11/2023</time>
                                             <div className="text-l italic text-white">HTML, CSS, JavaScript</div>
                                         </div>
-                                        <div className="text-gray-400 font-semibold ">Ce projet a pour but principal d'apprendre à manipuler JavaScript. Il consiste à réaliser une application web de jeu du BlackJack.</div>
+                                        <div className="text-gray-400 font-semibold ">Ce projet a pour but principal d&aposapprendre à manipuler JavaScript. Il consiste à réaliser une application web de jeu du BlackJack.</div>
                                     </div>
                                     
                                     <div className="relative pl-8 sm:pl-32 py-6 group">
@@ -55,7 +55,7 @@ export default function Section () {
                                             <div className="text-l italic text-white">C++, Python, JavaScript</div>
                                         </div>
                                         <div className="text-gray-400 font-semibold ">
-                                            <p>Ce projet consiste à réaliser une centrale inertielle et à l'utiliser pour intéragir avec le simulateur de vol FlightGear et des instruments de vol (interface web).</p>
+                                            <p>Ce projet consiste à réaliser une centrale inertielle et à l&aposutiliser pour intéragir avec le simulateur de vol FlightGear et des instruments de vol (interface web).</p>
                                             <li>Lecture des données de modules(gyroscopes + accéléromètres  3 axes (MPU6050) / magnétomètre (QMC5883L)) avec un Arduino Uno(C++).</li>
                                             <li>Interaction avec le modèle 3D de la simulation de vol FlightGear (Python).</li>
                                             <li>Interaction avec les instruments de vols dans une page web (Python + JavaScript).</li>
