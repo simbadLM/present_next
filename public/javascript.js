@@ -9,7 +9,7 @@ let flag = false;
 
 
 
-
+/* 
 anim.addEventListener('mouseover', async function (event) {
     timerAnim = 0.5;
     if (cardHid.checkVisibility() == false) {
@@ -43,8 +43,9 @@ buttonLeave.addEventListener('click', async function(event) {
         }, 500);
             card.style.animation = "rotateAnimation1 0.5s linear";
     })
+ */
 
-
+/* 
 function  upStat () {
     if (flag) return;
      console.log("coucou");   
@@ -62,7 +63,7 @@ function  upStat () {
 }
 
 
-window.setInterval(upStat, 500);
+window.setInterval(upStat, 500); */
 
  
 

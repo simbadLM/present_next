@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header  from './header/page'
 import Section from './section/page'
 import Contact from './contact/page'
-import Projet from './projet/page'
+import Projet from './components/projects_gate/page'
 import { Manrope } from 'next/font/google'
  
 const manrope = Manrope({

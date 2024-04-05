@@ -7,8 +7,9 @@ export default function Header () {
             <div className="flex items-center justify-center">
                 <nav className="flex justify-center items-center">
                     <ul className="flex space-x-8  justify-center items-center">
-                        <li><a id="a" href="#present">Présentation</a></li>
-                        <li><a id="a" href="#project">Projets</a></li>
+                        <li><Link id="a" href="./">Présentation</Link></li>
+                        <li><Link id="a" href="./project">Projets</Link></li>
+                        <li><a id="a" target="_blank" href="https://gamma.app/docs/Quest-ce-que-la-veille-technologique-gl25exgm3v3kb6q?mode=doc">Veille technologique</a></li>
                     </ul>
                 </nav>
                 <nav  className=" absolute right-2 justify-end sm:flex items-center sm:static">
