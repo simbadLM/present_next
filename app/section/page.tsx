@@ -16,14 +16,13 @@ export default function Section () {
             </div>
             <div  className="inline-block mb-10 mt-5 sm:mt-5 m-20">
             <h2>Mon Parcours</h2>
-                <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai commencé à travailler. 
-                    Pendant le confinement, j&apos;ai décidé de me lancer dans l&apos;e-commerce en utilisant le CMS Shopify. 
-                    C&apos;est là que j&apos;ai mis un premier pied dans le monde du code en cherchant à personnaliser mes projets par moi-même.</p>
-                <p className="mt-3">J&apos;ai appris les bases du HTML, du CSS et du langage C, ce qui a éveillé mon intérêt pour la programmation. 
-                    J&apos;ai développé le désir de me reconvertir dans ce domaine. Malheureusement, le confinement a pris fin, et j&apos;ai dû reprendre une activité salariée. 
-                    Pendant deux ans, j&apos;ai travaillé dans le secteur de la restauration, occupant des postes de management et d&apos;exécutif pur.</p>
-                <p className="mt-3">En 2022, j&apos;ai ressenti à nouveau l&apos;appel de la formation en développement. Cela m&apos;a conduit à une décision importante : en septembre 2023, 
-                    j&apos;ai intégré le BTS SIO au Greta de Quimper pour devenir développeur.</p>
+                <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai travillé dans les secteurs qui m'attiraient ou me permettaient de voyager. 
+                    Pendant le 1er confinement, j&apos;ai décidé de lancer une boutique d'e-commerce en utilisant le CMS Shopify. 
+                </p>
+                <p className="mt-3">En cherchant à personnaliser mes projets par moi-même, j&apos;ai appris les bases du HTML, du CSS et du langage C. 
+                    J&apos;ai commencé alors à mûrir un projet de formation dans le développement. Malheureusement, le confinement a pris fin, et j&apos;ai dû reprendre une activité salariée. 
+                    Pendant deux ans, j&apos;ai travaillé dans le secteur de la restauration, occupant des postes de management ou d&apos;exécutif et gardant en tête cette appétence nouvellement découverte pour la programmation.</p>
+                <p className="mt-3">En 2022, l&apos;arrivée de ma fille m&apos;a conduit à repenser ma balance vie professionnelle / personnelle et j&apos;ai décidé de m&apos;inscrire à la rentrée 2023 du BTS SIO au GRETA de Quimper.</p>
             </div>
     </section>
     )
