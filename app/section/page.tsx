@@ -17,7 +17,7 @@ export default function Section () {
             <div  className="inline-block mb-10 mt-5 sm:mt-5 m-20">
             <h2>Mon Parcours</h2>
                 <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai travillé dans les secteurs qui m'attiraient ou me permettaient de voyager. 
-                    Pendant le 1er confinement, j&apos;ai décidé de lancer une boutique d'e-commerce en utilisant le CMS Shopify. 
+                    Pendant le 1er confinement, j&apos;ai décidé de lancer une boutique d&apos;e-commerce en utilisant le CMS Shopify. 
                 </p>
                 <p className="mt-3">En cherchant à personnaliser mes projets par moi-même, j&apos;ai appris les bases du HTML, du CSS et du langage C. 
                     J&apos;ai commencé alors à mûrir un projet de formation dans le développement. Malheureusement, le confinement a pris fin, et j&apos;ai dû reprendre une activité salariée. 
