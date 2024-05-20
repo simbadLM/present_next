@@ -16,7 +16,7 @@ export default function Section () {
             </div>
             <div  className="inline-block mb-10 mt-5 sm:mt-5 m-20">
             <h2>Mon Parcours</h2>
-                <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai travillé dans les secteurs qui m'attiraient ou me permettaient de voyager. 
+                <p> Après un bac littéraire et un bac professionnel en mécanique, j&apos;ai travillé dans les secteurs qui m&apos;attiraient ou me permettaient de voyager. 
                     Pendant le 1er confinement, j&apos;ai décidé de lancer une boutique d&apos;e-commerce en utilisant le CMS Shopify. 
                 </p>
                 <p className="mt-3">En cherchant à personnaliser mes projets par moi-même, j&apos;ai appris les bases du HTML, du CSS et du langage C. 
