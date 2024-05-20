@@ -27,7 +27,7 @@ export default function Header () {
                         </li>
                         <li>
                             <Link 
-                                href="https://github.com/XP3rS0na">
+                                href="https://github.com/simbadLM/">
                                 <Image 
                                     src="/github.png" 
                                     title="Github de Quentin Balloy" 
